@@ -1,0 +1,27 @@
+
+# Deployment Log
+
+## Backend Setup
+1. Logged in to the EC2 instance.
+2. Set up environment variables using the .env file in the backend directory.
+3. Installed necessary dependencies using `npm install`.
+4. Started the server using `pm2 start index.js --name "blog-backend"`.
+5. Ensured that PM2 starts the server on reboot using `pm2 startup`.
+
+## Frontend Setup
+1. Installed the necessary tools and dependencies.
+2. Built the frontend using `pnpm run build`.
+3. Deployed the frontend to S3.
+
+## AWS CLI Configuration
+1. Configured AWS CLI with Access Key and Secret Key.
+2. Fixed permissions and policies for accessing S3 buckets.
+
+## Frontend Deployment
+1. Sync'd frontend build files to S3.
+2. Verified the deployment by checking the S3 bucket.
+
+## Issues Encountered
+- Encountered issues with AWS CLI permissions.
+- Resolved the issue by configuring appropriate IAM policies for the user.
+
