@@ -13,14 +13,7 @@ This project demonstrates the deployment of a full-stack MERN application using 
 
 ---
 
-## Repositories
-
-- **Frontend:** [blogapp-frontend](https://github.com/shahad-dev/blogapp-frontend)
-- **Backend:** [blogapp-backend](https://github.com/shahad-dev/blogapp-backend)
-
----
-
-## Deployment Summary
+## Deployment Steps
 
 ### 1. Frontend – S3 Static Website Hosting
 
@@ -32,10 +25,6 @@ Steps Taken:
 - Uploaded the `dist/` folder to the S3 bucket.
 - Adjusted bucket permissions for public access.
 - Verified frontend functionality via S3 URL.
-
-**Screenshots:**
-- S3 Public URL showing app
-- `curl -I` response with `200 OK`
 
 ---
 
@@ -57,9 +46,6 @@ Steps Taken:
 - Started the backend with `pm2 start index.js`.
 - Saved PM2 config for persistence across reboots.
 
-**Screenshots:**
-- PM2 running the server
-- API tested via browser or curl
 
 ---
 
@@ -83,9 +69,6 @@ Steps Taken:
 - Integrated the bucket with backend via `.env`.
 - Successfully tested file upload and retrieval through the app.
 
-**Screenshot:**
-- Uploaded image viewed directly via public S3 URL
-
 ---
 
 ### 4. Final Test – Post with Image
@@ -93,9 +76,6 @@ Steps Taken:
 - Used the deployed frontend to add a new blog post with an image.
 - Image successfully uploaded to the media S3 bucket.
 - Image rendered correctly in the new post.
-
-**Screenshot:**
-- Blog post preview with uploaded image
 
 ---
 
@@ -120,11 +100,10 @@ This experience strengthened my cloud deployment skills and helped me understand
 
 ## Screenshots
 
-All required screenshots are included in the `/screenshots` folder and clearly labeled.
+All required screenshots are included and clearly labeled.
 
 ---
 
 ## Author
-
 Shahad
 Clarusway - DevOps & Infrastructure Engineer Track
